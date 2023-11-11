@@ -1,1 +1,1 @@
-const a = 101
+const a = 101;

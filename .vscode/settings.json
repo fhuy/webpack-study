@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    // 启用保存文件自动修复
+    // "source.fixAll.eslint": true
+  },
+  "eslint.codeAction.showDocumentation": {
+    // 启用文档提示
+    "enable": true
+  },
+  "eslint.options": {
+    // 指定vscode的eslint所处理的文件的后缀
+    "extensions": [".js", ".ts", ".tsx"]
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "html", "react", "typescript", "typescriptreact"]
+}

@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescipt-eslint", "prettier"],
+  "rules": {
+    "no-undef": "error",
+    "eslint-disable no-new": "off",
+    /* 通用部分 */
+    "camelcase": "off", // 强制驼峰命名规则
+    "comma-dangle": "off", // 是否允许对象中出现结尾逗号
+    "no-unused-vars": "off", // 禁止出现未使用过的变量
+    "no-extend-native": "off", // 禁止扩展native对象
+    "semi": ["error", "never"], // 句尾强制不加封号
+    "quotes": ["error", "single"], // 字符串使用单引号
+    // react
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    // sonarjs
+    "sonarjs/cognitive-complexity": "off", // 方法不能超过15行
+    "sonarjs/no-duplicate-string": "off", // 不能有重复的字符串，范围是当前页面
+    "sonarjs/no-identical-functions": "off",
+    "sonarjs/no-duplicated-branches": "off",
+    /* 项目定制部分 */
+    "no-mixed-operators": "off", // 禁止混合使用不同的操作符
+    "eqeqeq": "off",
+    "sonarjs/no-collapsible-if": "off",
+    "space-before-function-paren": 0,
+    "no-eval": "off",
+    "sonarjs/max-switch-cases": "off",
+    "no-control-regex": 0,
+    "no-callback-literal": 0,
+    "sonarjs/no-small-switch": "off",
+    "standard/no-callback-literal": "off",
+    "no-async-promise-executor": "off"
+  }
+}
